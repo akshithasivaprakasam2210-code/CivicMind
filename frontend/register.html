@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | CivicMind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="auth-body">
+  <div class="auth-wrapper">
+    <div class="auth-left">
+      <div class="auth-brand">
+        <div class="logo-icon">CM</div>
+        <div>
+          <h2>CivicMind</h2>
+          <p>Citizen-Centric Smart Grievance Management</p>
+        </div>
+      </div>
+
+      <h1>Create your account</h1>
+      <p class="auth-sub">
+        Register as a citizen to raise grievances and track resolutions, or use role-based access for officers and administrators.
+      </p>
+
+      <div class="auth-points">
+        <div class="auth-point">✔ Complaint reporting & status tracking</div>
+        <div class="auth-point">✔ Smart categorization & department routing</div>
+        <div class="auth-point">✔ Escalation monitoring & analytics</div>
+      </div>
+    </div>
+
+    <div class="auth-card">
+      <h2>Register</h2>
+      <p>Create a CivicMind account</p>
+
+<form class="auth-form" id="registerForm">
+
+<label>Full Name</label>
+<input type="text" id="name" required>
+
+<label>Email</label>
+<input type="email" id="email" required>
+
+<label>Phone Number</label>
+<input type="text" id="phone" required>
+
+<label>Ward / Area</label>
+<input type="text" id="area" required>
+
+<label>Password</label>
+<input type="password" id="password" required>
+
+<label>Role</label>
+<select id="role" required>
+    <option value="">Select role</option>
+    <option value="Citizen">Citizen</option>
+    <option value="Officer">Officer</option>
+    <option value="Admin">Admin</option>
+</select>
+
+<button type="submit">Create Account</button>
+
+</form>
+
+      <p class="auth-switch">
+        Already have an account?
+        <a href="login.html">Login</a>
+      </p>
+
+      <a href="index.html" class="back-home">← Back to Home</a>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

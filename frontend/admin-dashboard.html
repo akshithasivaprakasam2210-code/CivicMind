@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | CivicMind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="logo-icon">CM</div>
+        <div>
+          <h3>CivicMind</h3>
+          <p>Admin Portal</p>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="active" href="admin-dashboard.html">Dashboard</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="index.html">Logout</a>
+      </nav>
+    </aside>
+
+    <main class="dashboard-main">
+      <div class="topbar">
+        <div>
+          <h1>Admin Dashboard</h1>
+          <p>System-wide grievance monitoring and department oversight</p>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="dash-card stat-box">
+          <p>Total Complaints</p>
+          <h2>248</h2>
+        </div>
+        <div class="dash-card stat-box">
+          <p>Open Cases</p>
+          <h2>68</h2>
+        </div>
+        <div class="dash-card stat-box">
+          <p>Resolution Rate</p>
+          <h2>84%</h2>
+        </div>
+        <div class="dash-card stat-box">
+          <p>Escalated Cases</p>
+          <h2>12</h2>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="dash-card large-card">
+          <div class="card-header">
+            <h3>Recent System Complaints</h3>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Complaint</th>
+                  <th>Category</th>
+                  <th>Priority</th>
+                  <th>Status</th>
+                  <th>Assigned Dept.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CM301</td>
+                  <td>Drainage blockage near hospital</td>
+                  <td>Drainage</td>
+                  <td><span class="priority critical">Critical</span></td>
+                  <td><span class="badge danger">Escalated</span></td>
+                  <td>Drainage Department</td>
+                </tr>
+                <tr>
+                  <td>CM302</td>
+                  <td>Streetlight outage in ward 8</td>
+                  <td>Electrical</td>
+                  <td><span class="priority high">High</span></td>
+                  <td><span class="badge warning">In Progress</span></td>
+                  <td>Electrical Maintenance</td>
+                </tr>
+                <tr>
+                  <td>CM303</td>
+                  <td>Garbage overflow near market</td>
+                  <td>Sanitation</td>
+                  <td><span class="priority medium">Medium</span></td>
+                  <td><span class="badge pending">Pending</span></td>
+                  <td>Sanitation Department</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="dash-card">
+          <div class="card-header">
+            <h3>AI Alerts</h3>
+          </div>
+
+          <div class="insight-box">
+            <h4>Duplicate Cluster</h4>
+            <p>5 similar sanitation complaints detected in Ward 12 in the last 48 hours.</p>
+          </div>
+
+          <div class="insight-box">
+            <h4>Escalation Alert</h4>
+            <p>Drainage complaint CM301 has crossed SLA and requires immediate intervention.</p>
+          </div>
+
+          <div class="insight-box">
+            <h4>Department Load</h4>
+            <p>Sanitation Department currently has the highest unresolved complaint volume.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

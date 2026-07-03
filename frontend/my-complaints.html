@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Complaints | CivicMind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="logo-icon">CM</div>
+        <div>
+          <h3>CivicMind</h3>
+          <p>Citizen Portal</p>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="citizen-dashboard.html">Dashboard</a>
+        <a href="report-complaint.html">Report Complaint</a>
+        <a class="active" href="my-complaints.html">My Complaints</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="index.html">Logout</a>
+      </nav>
+    </aside>
+
+    <main class="dashboard-main">
+      <div class="topbar">
+        <div>
+          <h1>My Complaints</h1>
+          <p>Track all complaints you have submitted through CivicMind</p>
+        </div>
+      </div>
+
+      <div class="table-card">
+        <div class="table-header">
+          <h3>Submitted Complaints</h3>
+          <p>View complaint status, severity, and submission details</p>
+        </div>
+
+        <div id="complaintsContainer" class="complaints-grid">
+          <!-- Complaints will be inserted here by JS -->
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

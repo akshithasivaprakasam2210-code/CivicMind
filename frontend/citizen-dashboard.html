@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Citizen Dashboard | CivicMind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="logo-icon">CM</div>
+        <div>
+          <h3>CivicMind</h3>
+          <p>Citizen Portal</p>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="active" href="citizen-dashboard.html">Dashboard</a>
+        <a href="report-complaint.html">Report Complaint</a>
+        <a href="my-complaints.html">My Complaints</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="#" onclick="logout()">Logout</a>
+      </nav>
+    </aside>
+
+    <main class="dashboard-main">
+      <div class="topbar">
+        <div>
+          <h1>Citizen Dashboard</h1>
+          <p>Welcome back 👋</p>
+        </div>
+        <a href="report-complaint.html" class="primary-btn">+ New Complaint</a>
+      </div>
+
+      <div class="stats-grid">
+       <div class="dash-card stat-box">
+    <p>Total Complaints</p>
+    <h2 id="totalComplaints">0</h2>
+</div>
+
+<div class="dash-card stat-box">
+    <p>Resolved</p>
+    <h2 id="resolvedComplaints">0</h2>
+</div>
+
+<div class="dash-card stat-box">
+    <p>In Progress</p>
+    <h2 id="progressComplaints">0</h2>
+</div>
+
+<div class="dash-card stat-box">
+    <p>Pending</p>
+    <h2 id="pendingComplaints">0</h2>
+</div>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="dash-card large-card">
+          <div class="card-header">
+            <h3>Recent Complaints</h3>
+            <a href="my-complaints.html">View all</a>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Issue</th>
+                  <th>Category</th>
+                  <th>Status</th>
+                  <th>Priority</th>
+                </tr>
+              </thead>
+              <tbody id ="recentComplaintsBody">
+                <tr>
+                  <td>CM101</td>
+                  <td>Streetlight not working</td>
+                  <td>Electrical</td>
+                  <td><span class="badge warning">In Progress</span></td>
+                  <td><span class="priority high">High</span></td>
+                </tr>
+                <tr>
+                  <td>CM102</td>
+                  <td>Garbage overflow near market</td>
+                  <td>Sanitation</td>
+                  <td><span class="badge success">Resolved</span></td>
+                  <td><span class="priority medium">Medium</span></td>
+                </tr>
+                <tr>
+                  <td>CM103</td>
+                  <td>Water leakage near school</td>
+                  <td>Water Supply</td>
+                  <td><span class="badge pending">Pending</span></td>
+                  <td><span class="priority high">High</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="dash-card">
+          <div class="card-header">
+            <h3>AI Suggestions</h3>
+          </div>
+          <div class="insight-box">
+            <h4>Duplicate Complaint Detected</h4>
+            <p>A similar complaint for “Water leakage near school” was reported 2 days ago in the same area.</p>
+          </div>
+
+          <div class="insight-box">
+            <h4>Priority Alert</h4>
+            <p>Your complaint CM103 is marked high priority due to repeated reports in the same location.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

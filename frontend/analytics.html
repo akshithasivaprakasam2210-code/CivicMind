@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analytics | CivicMind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="logo-icon">CM</div>
+        <div>
+          <h3>CivicMind</h3>
+          <p>Analytics</p>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="citizen-dashboard.html">Citizen</a>
+        <a href="officer-dashboard.html">Officer</a>
+        <a href="admin-dashboard.html">Admin</a>
+        <a class="active" href="analytics.html">Analytics</a>
+        <a href="index.html">Logout</a>
+      </nav>
+    </aside>
+
+    <main class="dashboard-main">
+      <div class="topbar">
+        <div>
+          <h1>Analytics Dashboard</h1>
+          <p>System intelligence, trends and department performance insights</p>
+        </div>
+      </div>
+
+      <div class="analytics-grid">
+        <div class="dash-card analytics-card">
+          <h3>Complaints by Category</h3>
+          <div class="fake-chart bars">
+            <div class="bar" style="height: 85%;"><span>Water</span></div>
+            <div class="bar" style="height: 70%;"><span>Roads</span></div>
+            <div class="bar" style="height: 60%;"><span>Garbage</span></div>
+            <div class="bar" style="height: 50%;"><span>Drainage</span></div>
+            <div class="bar" style="height: 40%;"><span>Electrical</span></div>
+          </div>
+        </div>
+
+        <div class="dash-card analytics-card">
+          <h3>Resolution Status</h3>
+          <div class="donut-wrap">
+            <div class="donut"></div>
+            <div class="donut-legend">
+              <p><span class="legend green"></span> Resolved - 58%</p>
+              <p><span class="legend yellow"></span> In Progress - 24%</p>
+              <p><span class="legend red"></span> Escalated - 18%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dash-card analytics-card">
+          <h3>AI Insights</h3>
+          <div class="insight-box">
+            <h4>Hotspot Area</h4>
+            <p>Ward 12 has the highest complaint volume this week.</p>
+          </div>
+          <div class="insight-box">
+            <h4>Most Repeated Category</h4>
+            <p>Water leakage and sanitation complaints show the highest duplicate clustering.</p>
+          </div>
+          <div class="insight-box">
+            <h4>Department Efficiency</h4>
+            <p>Electrical Maintenance has the fastest average resolution time.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

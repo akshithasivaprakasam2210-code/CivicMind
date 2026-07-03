@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | CivicMind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="auth-body">
+  <div class="auth-wrapper">
+    <div class="auth-left">
+      <div class="auth-brand">
+        <div class="logo-icon">CM</div>
+        <div>
+          <h2>CivicMind</h2>
+          <p>Smart Governance through AI-Assisted Grievance Resolution</p>
+        </div>
+      </div>
+
+      <h1>Welcome back</h1>
+      <p class="auth-sub">
+        Login to continue managing public grievances, department assignments, and resolution workflows.
+      </p>
+
+      <div class="auth-points">
+        <div class="auth-point">✔ AI complaint triage</div>
+        <div class="auth-point">✔ Role-based dashboards</div>
+        <div class="auth-point">✔ Complaint analytics & escalation tracking</div>
+      </div>
+    </div>
+
+    <div class="auth-card">
+      <h2>Login</h2>
+      <p>Use demo credentials for frontend preview.</p>
+
+      <form class="auth-form" id="loginForm">
+        <label>Email</label>
+        <input type="email" id="loginEmail" placeholder="Enter your email" required />
+
+        <label>Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter your password" required />
+
+        <label>Login As</label>
+        <select id="loginRole" required>
+          <option value="">Select role</option>
+          <option value="citizen">Citizen</option>
+          <option value="officer">Officer</option>
+          <option value="admin">Admin</option>
+        </select>
+
+        <button type="submit" class="primary-btn full-btn">Login</button>
+      </form>
+
+      <p class="auth-switch">
+        Don’t have an account?
+        <a href="register.html">Create account</a>
+      </p>
+
+      <a href="index.html" class="back-home">← Back to Home</a>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
